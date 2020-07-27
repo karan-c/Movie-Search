@@ -1,0 +1,130 @@
+html {
+    font-size: 10px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: darkslateblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p{
+    font-size: 1.6rem;
+}
+
+.container {
+    margin : 30px auto;
+    max-width: 1100px;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: ghostwhite;
+    border: 1.5px solid gray;
+}
+
+.title {
+    font-size: 4.4rem;
+    text-align: center;
+    
+}
+
+small{
+    font-size: 1.2rem;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 1rem;
+    align-items: center;
+}
+
+.input {
+    font-size: 1.6rem;
+    padding: 0.5rem 2rem;
+    line-height: 2.8rem;
+    border-radius: 20px;
+    border: 1px solid gray;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+.button {
+    background-color: rgba(0,200,0,0.7);
+    color: white;
+    padding: 1rem 2rem;
+    border: 1px solid rgba(0,200,0,0.9);
+    border-radius: 20px;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: background-color 250ms;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+.input:focus {
+    box-shadow: 0 0 0 2pt gray;
+}
+
+.button:focus {
+    box-shadow: 0 0 0 2pt rgba(0,200,0,0.9);
+}
+
+button:hover {
+    background-color: rgba(0,200,0,0.9);
+}
+.movieCardList {
+    margin-top: 4rem;
+}
+
+
+.movieCard {
+    background-color: white;
+    width: auto;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    margin: 10px auto;
+    padding: 10px;
+    width: auto;
+    font-size: small;
+    border: 1px solid gray;
+    border-radius: 10px;
+    box-shadow: 0 0 2px 2px rgba(0, 0,0 ,0.2);
+}
+
+.movieCard--image{
+    margin: 1.5rem;
+    padding: 1rem;
+    max-width: 200px;
+}
+
+.movieCard--content {
+    margin: 1.5rem;
+    padding: 1rem;
+}
+
+
+
+@media (max-width:750px) {
+    form {
+        display:grid;
+        grid-template-columns: auto;
+    }
+
+    .input, .button{
+        margin-bottom: 1rem;
+    }
+    .movieCard {
+        grid-template-columns: auto;
+        grid-template-rows: auto 1fr;
+    }
+    .movieCard--image {
+        margin: 0 auto;
+        display: block;
+    }
+
+}
