@@ -1,7 +1,7 @@
 [https://movie-search-karan.netlify.app/]
 -----------
 
-This is a normal movie search app made for the purpose of practicing React.
+This is a just a normal movie search app made for the purpose of practicing React.
 
 Used TMDB API.
 
